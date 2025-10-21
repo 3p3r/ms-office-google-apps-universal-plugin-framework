@@ -2,6 +2,7 @@
 node_modules
 
 # clasp files
+clasp.json
 creds.json
 
 # certs

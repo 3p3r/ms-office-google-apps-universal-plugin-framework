@@ -23,7 +23,7 @@ jest.setTimeout(180000);
 
 const srcTestFile = path.join(
   __dirname,
-  '../src/client/sidebar-about-page/components/About.jsx'
+  '../src/client/sidebar-page/components/About.jsx'
 );
 
 const viteDevServerReady = async (process) => {
@@ -57,9 +57,7 @@ describe(`Local setup ${isExtended ? '*extended*' : ''}`, () => {
     if (isExtended) {
       await openAddon(page);
     } else {
-      await page.goto(
-        'https://localhost:3000/sidebar-about-page/index.html'
-      );
+      await page.goto('https://localhost:3000/sidebar-page/index.html');
       await page.waitForTimeout(3000);
     }
   });

@@ -1,12 +1,12 @@
 export const onOpen = () => {
   const menu = SpreadsheetApp.getUi()
     .createMenu('My Sample React Project') // edit me!
-    .addItem('About me', 'openAboutSidebar');
+    .addItem('Launch Sidebar', 'openSidebar');
 
   menu.addToUi();
 };
 
-export const openAboutSidebar = () => {
-  const html = HtmlService.createHtmlOutputFromFile('sidebar-about-page');
+export const openSidebar = () => {
+  const html = HtmlService.createHtmlOutputFromFile('sidebar-page');
   SpreadsheetApp.getUi().showSidebar(html);
 };

@@ -1,13 +1,4 @@
-import { onOpen, openAboutSidebar } from './ui';
-
-import { getSheetsData, addSheet, deleteSheet, setActiveSheet } from './sheets';
+import { onOpen, openSidebar } from './ui';
 
 // Public functions must be exported as named exports
-export {
-  onOpen,
-  openAboutSidebar,
-  getSheetsData,
-  addSheet,
-  deleteSheet,
-  setActiveSheet,
-};
+export { onOpen, openSidebar };

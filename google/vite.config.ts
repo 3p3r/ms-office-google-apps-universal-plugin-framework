@@ -16,9 +16,9 @@ const devServerWrapper = './dev/dev-server-wrapper.html';
 
 const clientEntrypoints = [
   {
-    name: 'CLIENT - Sidebar About Page',
-    filename: 'sidebar-about-page',
-    template: 'sidebar-about-page/index.html',
+    name: 'CLIENT - Sidebar Page',
+    filename: 'sidebar-page',
+    template: 'sidebar-page/index.html',
   },
 ];
 
