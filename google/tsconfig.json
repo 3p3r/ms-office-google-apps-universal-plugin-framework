@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2019",
-    "types": ["gas-types-detailed"],
+    "typeRoots": ["node_modules/@types", "node_modules"],
+    "types": ["gas-types-detailed", "react", "react-dom", "node"],
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
@@ -20,7 +21,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.vite.json" }]
