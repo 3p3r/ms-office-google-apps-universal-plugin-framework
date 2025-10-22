@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
-const urlDev = "https://localhost:3000/";
+const urlDev = "https://localhost:3060/";
 const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 module.exports = async (env, options) => {
@@ -100,7 +100,7 @@ module.exports = async (env, options) => {
           key: "../google/certs/key.pem",
         }
       },
-      port: process.env.npm_package_config_dev_server_port || 3000,
+      port: process.env.npm_package_config_dev_server_port || 3060,
     },
   };
 

@@ -7,7 +7,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { viteSingleFile } from 'vite-plugin-singlefile';
 import { writeFile } from 'fs/promises';
 
-const PORT = 3000;
+const PORT = 3050;
 const clientRoot = './src/client';
 const outDir = './dist';
 const serverEntry = 'src/server/index.ts';
