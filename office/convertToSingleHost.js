@@ -12,8 +12,12 @@ if (process.argv.length <= 2) {
   console.log("SYNTAX: convertToSingleHost.js <host> <manifestType> <projectName> <appId>");
   console.log();
   console.log(`  host (required): Specifies which Office app will host the add-in: ${hostList}`);
-  console.log(`  manifestType: Specify the type of manifest to use: 'xml' or 'json'.  Defaults to 'xml'`);
-  console.log(`  projectName: The name of the project (use quotes when there are spaces in the name). Defaults to 'My Office Add-in'`);
+  console.log(
+    `  manifestType: Specify the type of manifest to use: 'xml' or 'json'.  Defaults to 'xml'`
+  );
+  console.log(
+    `  projectName: The name of the project (use quotes when there are spaces in the name). Defaults to 'My Office Add-in'`
+  );
   console.log(`  appId: The id of the project or 'random' to generate one.  Defaults to 'random'`);
   console.log();
   process.exit(1);
@@ -250,7 +254,7 @@ modifyProjectForSingleHost(host).catch((err) => {
 let manifestPath = "manifest.xml";
 
 if (host !== "outlook" || manifestType !== "json") {
-// Remove things that are only relevant to JSON manifest
+  // Remove things that are only relevant to JSON manifest
   deleteJSONManifestRelatedFiles();
   updatePackageJsonForXMLManifest();
 } else {

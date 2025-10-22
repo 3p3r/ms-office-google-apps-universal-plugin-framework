@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+.output/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Coverage reports
+coverage/
+
+# TypeScript declaration files
+*.d.ts
+
+# Google Apps Script clasp configuration
+.clasp.json
+
+# Yarn
+.yarn/
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

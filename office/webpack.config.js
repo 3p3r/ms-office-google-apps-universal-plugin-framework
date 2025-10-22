@@ -98,7 +98,7 @@ module.exports = async (env, options) => {
         options: {
           cert: "../google/certs/cert.pem",
           key: "../google/certs/key.pem",
-        }
+        },
       },
       port: process.env.npm_package_config_dev_server_port || 3060,
     },

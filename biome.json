@@ -1,0 +1,79 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.7/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "useExhaustiveDependencies": "warn"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useTemplate": "error",
+        "useNodejsImportProtocol": "warn"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noTsIgnore": "warn"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto"
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto"
+    },
+    "globals": ["console", "process"]
+  },
+  "files": {
+    "includes": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.json",
+      "**/*.css",
+      "**/*.scss",
+      "**/*.less",
+      "**/*.html"
+    ]
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.json"],
+      "formatter": {
+        "enabled": true
+      }
+    },
+    {
+      "includes": ["**/dist/**", "**/build/**", "**/node_modules/**"],
+      "linter": {
+        "enabled": false
+      },
+      "formatter": {
+        "enabled": false
+      }
+    }
+  ]
+}
