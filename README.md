@@ -27,16 +27,16 @@ Build the project using:
 npm run build
 ```
 
-Start dev server for Office using:
+Start dev server for both Office and Google using:
 
 ```sh
-npm run start:office
+npm start
 ```
 
-Start dev server for Google using:
+Format the codebase using:
 
 ```sh
-npm run start:google
+npm run format
 ```
 
 ## References

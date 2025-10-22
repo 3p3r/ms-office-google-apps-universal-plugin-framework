@@ -15,4 +15,3 @@
 - To install new shared packages, use `npm install <package-name>` in the root directory.
 - To install new Google-specific packages, use `yarn add <package-name>` in the `google/` directory.
 - To install new Office-specific packages, use `npm install <package-name>` in the `office/` directory.
-
