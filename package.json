@@ -9,7 +9,9 @@
     "install": "npm-run-all --parallel install:google install:office",
     "build:google": "yarn --cwd google build",
     "build:office": "npm run build --prefix office",
-    "build": "npm-run-all --parallel build:google build:office"
+    "build": "npm-run-all --parallel build:google build:office",
+    "start:google": "yarn --cwd google run start",
+    "start:office": "npm run dev-server --prefix office"
   },
   "repository": {
     "type": "git",

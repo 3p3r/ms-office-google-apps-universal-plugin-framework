@@ -13,8 +13,8 @@ Office.onReady(() => {
 });
 
 if ((module as any).hot) {
-  (module as any).hot.accept("./components/App", () => {
-    const NextApp = require("./components/App").default;
+  (module as any).hot.accept("../../../shared/index", () => {
+    const NextApp = require("../../../shared/index").default;
     root?.render(NextApp);
   });
 }
