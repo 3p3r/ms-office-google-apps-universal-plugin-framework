@@ -1,5 +1,5 @@
 export const onOpen = () => {
-  const menu = SpreadsheetApp.getUi()
+  const menu = DocumentApp.getUi()
     .createMenu("My Sample React Project") // edit me!
     .addItem("Launch Sidebar", "openSidebar");
 
@@ -8,5 +8,5 @@ export const onOpen = () => {
 
 export const openSidebar = () => {
   const html = HtmlService.createHtmlOutputFromFile("sidebar-page");
-  SpreadsheetApp.getUi().showSidebar(html);
+  DocumentApp.getUi().showSidebar(html);
 };

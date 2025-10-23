@@ -15,6 +15,6 @@ Office.onReady(() => {
 if ((module as any).hot) {
   (module as any).hot.accept("../../../shared/index", () => {
     const NextApp = require("../../../shared/index").default;
-    root?.render(NextApp);
+    root?.render(<NextApp />);
   });
 }
